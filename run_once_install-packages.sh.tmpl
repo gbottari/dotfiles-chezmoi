@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# pkgs hash: {{ include "pkgs" | sha256sum  }}
+
+yay -S --needed $(grep -o "^[^#]*" pkgs)
+

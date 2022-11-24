@@ -1,0 +1,49 @@
+act-bin                     # run github actions locally
+alacritty                   # terminal
+anki-official-binary-bundle # anki flashcards
+autorandr                   # automatically duplicates/replicates when HDMI is connected
+bash-completion
+chromium
+clight                      # control screen brightness
+docker
+dropbox
+entr
+espanso-bin                 # text expander
+firefox
+geoclue2                    # gets approximate GPS coords
+git-lfs
+gthumb                      # basic image browser and editor
+gvim
+irpf                        # taxes software
+keepass                     # password manager
+keepmenu-git                # ui for keepass
+lscolors-git                # setup nice LS_COLORS for the terminal
+mysql-workbench
+newman                      # run postman collections from terminal
+noto-fonts-emoji            # correctly displays emojis on chromium
+nvm                         # node version manager
+obsidian
+pavucontrol                 # volume control
+polybar
+postman-bin
+potato                      # minimal pomodoro
+python-pywal                # theme generator based on wallpaper
+redshift                    # set color temperature automatically
+rofi                        # command launcher
+robo3t-bin
+sxiv                        # image viewer with vi keybindings
+unified-remote-server
+vim-plug
+visual-studio-code-bin
+vtop                        # like htop
+w3m                         # needed for ranger image preview
+warsaw-bin
+wine
+xclip                       # copies from terminal to clipboard
+xcwd-git                    # passes current dir to commands
+zathura-pdf-mupdf
+zathura                     # pdf viewer with vi keybindings
+zip
+zoom                        # video conferences
+zotero-bin
+zplug
