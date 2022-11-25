@@ -2,5 +2,5 @@
 
 # pkgs hash: {{ include "pkgs" | sha256sum  }}
 
-yay -S --needed $(grep -o "^[^#]*" pkgs)
+yay -S --needed $(grep -o "^[^#]*" {{ joinPath .chezmoi.sourceDir "pkgs" | quote  }})
 
