@@ -1,0 +1,80 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+toggle_key: OFF
+search_shortcut: OFF
+search_trigger: OFF
+inject_delay: 5
+key_delay: 1
+matches:
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+    
+  # Info
+  - trigger: ":_1"
+    replace: "₁"
+  - trigger: ":_2"
+    replace: "₂"
+  - trigger: ":_3"
+    replace: "₃"
+  - trigger: ":name"
+    replace: "Giulio Dariano Bottari"
+  - trigger: ":cpf"
+    replace: "10001849786"
+  - trigger: ":rg"
+    replace: "130543564"
+  - trigger: ":cep"
+    replace: "24230190"
+  - trigger: ":@clarity"
+    replace: "giulio@clarity.io"
+  - trigger: ":@globo"
+    replace: "giulio.bottari@g.globo"
+  - trigger: ":@gmail"
+    replace: "giuliobottari@gmail.com"
+  - trigger: ":linkedin"
+    replace: "https://www.linkedin.com/in/gbottari"
+  - trigger: ":github"
+    replace: "https://github.com/gbottari"
+  - trigger: ":cel"
+    replace: "21983297399"
+  - trigger: ":pj"
+    replace: "46938104000142"
+
+  # Time
+  - trigger: ":now"
+    replace: "{{now}}"
+    vars:
+      - name: now
+        type: date
+        params:
+          format: "%H:%M"
+  - trigger: ":today"
+    replace: "{{today}}"
+    vars:
+      - name: today
+        type: date
+        params:
+          format: "%Y-%m-%d %H:%M"
+    
+  # Temperature
+  - trigger: ":temp"
+    replace: "{{temp}}"
+    vars:
+      - name: temp
+        type: shell
+        params:
+          cmd: curl "wttr.in/niteroi?format=1"
+
+  - trigger: ":dash"
+    replace: "—"
