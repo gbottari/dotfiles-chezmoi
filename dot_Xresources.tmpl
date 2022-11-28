@@ -1,0 +1,64 @@
+Xft.dpi: {{ .dpi }}
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+*foreground:                      #E8DFD6
+*fading:                          15
+*fadeColor:                       black
+*cursorColor:                     #16A085
+*pointerColorBackground:          #2B2C2B
+*pointerColorForeground:          #16A085
+*color0:       #032C36
+*color8:       #065F73
+*color1:       #C2454E
+*color9:       #EF5847
+*color2:       #7CBF9E
+*color10:      #A2D9B1
+*color3:       #8A7A63
+*color11:      #BEB090
+*color4:       #2E3340
+*color12:      #61778D
+*color5:       #FF5879
+*color13:      #FF99A1
+*color6:       #44B5B1
+*color14:      #9ED9D8
+*color7:       #F2F1B9
+*color15:      #F6F6C9
+
+Xcursor.theme: xcursor-breeze
+Xcursor.size:                     0
+
+!URxvt.font:                       xft:xos4 Terminus:size=15:antialias=false:hinting=true
+!URxvt.font:                       xft:Hack Nerd Font Mono:size=13:antialias=true
+URxvt.font:                       xft:DejaVu Sans Mono:size=13:antialias=true
+URxvt*depth:                      32
+URxvt*background:                 #021B21
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                false
+URxvt*saveLines:                  5000
+!URxvt*transparent: true
+!URxvt*shading: 30
+
+! extensions
+URxvt.perl-ext-common: default,url-select,keyboard-select,font-size
+
+! url detection
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
+
+! font-size
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+
+!Sxiv
+Sxiv.background: #999999
