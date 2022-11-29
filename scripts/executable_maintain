@@ -1,0 +1,44 @@
+#!/bin/zsh
+
+echo "Updating yay..."
+yay
+
+echo "Updating Flatpak..."
+flatpak update -y
+
+echo "Cleaning Flatpak..."
+flatpak uninstall --unused
+
+echo "Updating Snap..."
+sudo snap refresh
+
+echo "Updating Zplug..."
+source ~/.zshrc && zplug update
+
+echo "Running updatedb..."
+sudo updatedb
+
+echo "Cleaning pacman cache..."
+paccache -ruk1 && paccache -rk2
+
+echo "Cleaning yay cache from unused pkgs..."
+yay -Yc
+
+#echo "Cleaning yarn cache..."
+#yarn cache clean
+
+echo "Docker: prune images"
+docker image prune -f
+
+echo "Docker: prune networks"
+docker network prune -f
+
+echo "Cleaning npm cache..."
+npm cache clean --force
+
+echo "Compacting newsboat db..."
+newsboat -X
+
+echo "Press enter to update Vim..."
+read
+vim -c ':PlugUpgrade' && vim -c ':PlugUpdate'

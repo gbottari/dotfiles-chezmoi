@@ -1,0 +1,4 @@
+#!/bin/sh
+
+device=`ls /dev/video* | rofi -dmenu` 
+guvcview -d "$device"
