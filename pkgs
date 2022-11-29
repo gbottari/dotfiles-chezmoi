@@ -28,6 +28,9 @@ pavucontrol                 # volume control
 polybar
 postman-bin
 potato                      # minimal pomodoro
+pyenv
+python-pipenv
+python-poetry
 python-pywal                # theme generator based on wallpaper
 redshift                    # set color temperature automatically
 rofi                        # command launcher
