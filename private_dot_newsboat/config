@@ -1,0 +1,73 @@
+# general settings
+#auto-reload yes
+#reload-threads 8
+max-items 50
+
+download-full-page yes
+
+# externel browser
+macro m set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-browser ; set browser "$BROWSER %u"
+
+# unbind keys
+unbind-key ENTER
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+unbind-key D
+unbind-key ^D
+unbind-key A
+
+# bind keys - vim style
+bind-key h quit articlelist
+bind-key h quit article
+bind-key h quit tagselection
+bind-key h quit feedlist
+bind-key j down feedlist
+bind-key j down tagselection
+bind-key j next articlelist
+bind-key j down article
+bind-key J next-feed articlelist
+bind-key k up feedlist
+bind-key k prev articlelist
+bind-key k up tagselection
+bind-key K prev-feed articlelist
+bind-key k up article
+bind-key l open articlelist
+bind-key l open feedlist
+bind-key l open tagselection
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+
+color background         default   default
+color listnormal         default   default
+color listnormal_unread  default   default
+color listfocus          black     yellow
+color listfocus_unread   black     yellow
+color info               default   black
+color article            default   default
+
+feedlist-title-format "%N %?T?:: [%T]&?"
+articlelist-title-format "%N :: %T (%U)" 
+searchresult-title-format "%N :: search result"
+filebrowser-title-format "%N %V :: %?O?open file&save file? :: %f"
+dirbrowser-title-format "%N %V :: %?O?open directory&save file? :: %f"
+help-title-format "%N %V :: help"
+selecttag-title-format "%N :: select tag"
+selectfilter-title-format "%N :: select filter"
+itemview-title-format "%N :: '%T'"
+urlview-title-format "%N :: urls"
+dialogs-title-format "%N :: dialogs"
+
+feedlist-format "%4i %n %11u %t"
+articlelist-format "%4i %f %D   %?T?|%-17T|  ?%t"
+
+# ignores
+ignore-mode "display"
+
+# rice
+color info red black bold
+color article default default
+
