@@ -24,6 +24,7 @@ newman                      # run postman collections from terminal
 noto-fonts-emoji            # correctly displays emojis on chromium
 nvm                         # node version manager
 obsidian
+oh-my-zsh-git
 pa-applet                   # tray control for volume
 pavucontrol                 # volume control
 polybar
