@@ -9,8 +9,8 @@
 toggle_key: OFF
 search_shortcut: OFF
 search_trigger: OFF
-inject_delay: 5
-key_delay: 1
+inject_delay: 20
+key_delay: 10
 matches:
   # Dates
   - trigger: ":date"
