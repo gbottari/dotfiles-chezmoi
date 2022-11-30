@@ -9,6 +9,7 @@ docker
 dropbox
 entr
 espanso-bin                 # text expander
+feh                         # for wallpapers
 firefox
 geoclue2                    # gets approximate GPS coords
 git-lfs
