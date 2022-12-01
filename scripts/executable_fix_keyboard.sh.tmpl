@@ -1,0 +1,9 @@
+#!/bin/sh
+
+{{- if eq .chezmoi.hostname "gbottari-personal" }}
+setxkbmap -device 4 -model pc105 -layout us -option caps:escape
+setxkbmap -device 20 -model pc105 -layout us -variant alt-intl -option caps:escape
+{{- end }}
+
+# xmodmap /home/gbottari/.Xmodmap
+
