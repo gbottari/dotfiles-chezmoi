@@ -35,6 +35,7 @@ python-pywal                # theme generator based on wallpaper
 redshift                    # set color temperature automatically
 rofi                        # command launcher
 robo3t-bin
+solaar                      # to customize logitech hardware
 sxiv                        # image viewer with vi keybindings
 unified-remote-server
 vim-plug
