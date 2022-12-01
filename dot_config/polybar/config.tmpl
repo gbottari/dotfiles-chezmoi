@@ -84,7 +84,9 @@ interval = 5
 spacing = 3 
 mount-0 = /
 mount-1 = /home
+{{- if eq .chezmoi.hostname "gbottari-personal" }}
 mount-2 = /mnt/data
+{{- end }}
 
 label-mounted = %mountpoint%: %free%
 label-unmounted = %mountpoint% not mounted
