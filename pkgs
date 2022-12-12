@@ -17,6 +17,7 @@ git-lfs
 gthumb                      # basic image browser and editor
 gvim
 irpf                        # taxes software
+jq
 keepass                     # password manager
 keepmenu-git                # ui for keepass
 lscolors-git                # setup nice LS_COLORS for the terminal
