@@ -35,6 +35,7 @@ pyenv
 python-pipenv
 python-poetry
 python-pywal                # theme generator based on wallpaper
+rclone                      # syncing files
 redshift                    # set color temperature automatically
 rofi                        # command launcher
 robo3t-bin
