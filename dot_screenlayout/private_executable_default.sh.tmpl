@@ -1,0 +1,7 @@
+#!/bin/sh
+
+{{- if eq .chezmoi.hostname "zenbook" }}
+xrandr --output HDMI-1 --mode 2560x1080 --pos 2880x0 --transform 2,0,0,0,2,0,0,0,1 --output eDP-1 --mode 2880x1800 --pos 0x978 --primary
+{{- else }}
+xrandr --output eDP-1 --mode 1920x1080 --pos 0x178 --rotate normal --output DP-1 --off --output HDMI-1 --primary --mode 2560x1080 --pos 1920x0 --rotate normal
+{{- end }}
