@@ -1,0 +1,5 @@
+0 * * * * /usr/bin/newsboat -x reload
+0 * * * * /home/gbottari/scripts/auto_yeelight.sh
+30 17,18 * * * /home/gbottari/scripts/auto_yeelight.sh
+0 22 1,10,20 * * cd /home/gbottari/code/backup && make all
+0 */3 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) Display=:0.0 /home/gbottari/code/mood-tracker/mt.sh
