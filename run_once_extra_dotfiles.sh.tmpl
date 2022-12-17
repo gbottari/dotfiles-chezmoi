@@ -1,5 +1,10 @@
 #!/bin/sh
 
-# pkgs hash: {{ include "extra/etc_pacman.conf" | sha256sum  }}
-
+# hash: {{ include "extra/etc_pacman.conf" | sha256sum  }}
 sudo cp {{ .chezmoi.sourceDir }}/extra/etc_pacman.conf /etc/pacman.conf
+
+# hash: {{ include "extra/etc_geoclue.conf" | sha256sum  }}
+sudo cp {{ .chezmoi.sourceDir }}/extra/etc_geoclue.conf /etc/geoclue/geoclue.conf
+
+# hash: {{ include "extra/etc_geoclue.conf.pacnew" | sha256sum  }}
+sudo cp {{ .chezmoi.sourceDir }}/extra/etc_geoclue.conf.pacnew /etc/geoclue/geoclue.conf.pacnew
