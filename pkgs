@@ -5,6 +5,7 @@ autorandr                   # automatically duplicates/replicates when HDMI is c
 bash-completion
 chromium
 clight                      # control screen brightness
+cryptsetup                  # mount encrypted volumes
 docker
 dropbox
 entr
@@ -42,6 +43,7 @@ robo3t-bin
 solaar                      # to customize logitech hardware
 sxiv                        # image viewer with vi keybindings
 unified-remote-server
+veracrypt
 vim-plug
 visual-studio-code-bin
 vtop                        # like htop

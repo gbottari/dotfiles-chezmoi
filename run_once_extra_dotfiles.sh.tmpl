@@ -8,3 +8,9 @@ sudo cp {{ .chezmoi.sourceDir }}/extra/etc_geoclue.conf /etc/geoclue/geoclue.con
 
 # hash: {{ include "extra/etc_geoclue.conf.pacnew" | sha256sum  }}
 sudo cp {{ .chezmoi.sourceDir }}/extra/etc_geoclue.conf.pacnew /etc/geoclue/geoclue.conf.pacnew
+
+# hash: {{ include "extra/etc_crypttab" | sha256sum  }}
+chezmoi decrypt {{ .chezmoi.sourceDir }}/extra/etc_crypttab > /tmp/etc_crypttab
+sudo cp /tmp/etc_crypttab /etc/crypttab
+sudo chown root:root /etc/crypttab
+sudo chmod 644 /etc/crypttab
