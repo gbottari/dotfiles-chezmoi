@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# get code
+git clone git@github.com:gbottari/smart-devs.git ~/code/smart-devs
+
+# copy unit file
+sudo cp {{ .chezmoi.sourceDir }}/extra/smart-devs.service /etc/systemd/system/
+
+# reload to include the new service
+sudo systemctl daemon-reload
+
+# start the service
+sudo systemctl start smart-devs
+

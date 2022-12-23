@@ -1,0 +1,15 @@
+[Unit]
+Description="Setup smart devs"
+After=geoclue.service
+Wants=geoclue.service
+After=clightd.service
+Wants=clightd.service
+After=network.target
+Wants=network.target
+
+[Service]
+ExecStart=/home/gbottari/code/smart-devs/on_start.sh
+
+[Install]
+WantedBy=multi-user.target
+
