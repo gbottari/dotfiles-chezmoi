@@ -1,0 +1,2 @@
+# fix keyboard
+ACTION=="add", SUBSYSTEM=="hid", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/gbottari/.Xauthority", RUN+="/usr/bin/touch /tmp/smart-devs/keyboard"

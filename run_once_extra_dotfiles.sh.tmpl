@@ -14,3 +14,7 @@ chezmoi decrypt {{ .chezmoi.sourceDir }}/extra/etc_crypttab > /tmp/etc_crypttab
 sudo cp /tmp/etc_crypttab /etc/crypttab
 sudo chown root:root /etc/crypttab
 sudo chmod 644 /etc/crypttab
+
+# hash: {{ include "extra/99-external-kb.rules" | sha256sum  }}
+sudo cp {{ .chezmoi.sourceDir }}/extra/99-external-kb.rules /etc/udev/rules.d/
+
