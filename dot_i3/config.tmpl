@@ -1,4 +1,4 @@
-# VARS
+
 set $term alacritty
 set $up k
 set $right l
@@ -149,13 +149,13 @@ set $ws8 8
 
 # Splitting workspaces automatically
 workspace $ws1 output eDP-1
-workspace $ws2 output HDMI-1
+workspace $ws2 output {{ .external_display  }}
 workspace $ws3 output eDP-1
-workspace $ws4 output HDMI-1
+workspace $ws4 output {{ .external_display  }}
 workspace $ws5 output eDP-1
-workspace $ws6 output HDMI-1
+workspace $ws6 output {{ .external_display  }}
 workspace $ws7 output eDP-1
-workspace $ws8 output HDMI-1
+workspace $ws8 output {{ .external_display  }}
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

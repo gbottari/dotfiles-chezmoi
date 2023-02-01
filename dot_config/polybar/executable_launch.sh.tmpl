@@ -10,7 +10,7 @@
   tray_output="eDP-1"
 : '
   for m in $outputs; do
-    if [[ $m == "HDMI-1" ]]; then
+    if [[ $m == "{{ .external_display }}" ]]; then
         tray_output=$m
     fi
   done
