@@ -11,12 +11,14 @@ dropbox
 entr
 espanso-bin                 # text expander
 feh                         # for wallpapers
+flameshot                   # screenshot tool
 firefox
 geoclue2                    # gets approximate GPS coords
 github-cli
 git-lfs
 gthumb                      # basic image browser and editor
 gvim
+guvcview                    # webcam config
 irpf                        # taxes software
 jq
 keepass                     # password manager
