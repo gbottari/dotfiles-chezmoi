@@ -41,6 +41,7 @@ python-pywal                # theme generator based on wallpaper
 rclone                      # syncing files
 redshift                    # set color temperature automatically
 rofi                        # command launcher
+rofimoji                    # emojis mode for rofi
 robo3t-bin
 solaar                      # to customize logitech hardware
 sxiv                        # image viewer with vi keybindings
