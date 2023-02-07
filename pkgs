@@ -1,7 +1,6 @@
 act-bin                     # run github actions locally
 alacritty                   # terminal
 anki-official-binary-bundle # anki flashcards
-autorandr                   # automatically duplicates/replicates when HDMI is connected
 bash-completion
 chromium
 clight                      # control screen brightness
