@@ -1,0 +1,9 @@
+%YAML 1.3
+---
+- Rule:
+  - Key: [Snipping Tool, pressed]
+  - Execute: [flameshot, gui]
+- Rule:
+  - Key: [Open Emoji Panel, pressed]
+  - Execute: rofimoji
+...
