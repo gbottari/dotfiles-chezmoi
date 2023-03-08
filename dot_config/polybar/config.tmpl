@@ -32,7 +32,7 @@ font-0 = {{ .polybar_font }}
 font-1 = icomoon:size=9:sty
 
 modules-left = i3
-modules-right = memory cpu battery temperature filesystem date
+modules-right = cpu temperature battery filesystem date
 
 tray-position = ${env:TRAY_POSITION:right}
 tray-padding = {{ .polybar_tray_padding }}
@@ -57,9 +57,10 @@ mount-1 = /home
 mount-2 = /mnt/data
 {{ end }}
 
-label-mounted = "  %mountpoint%: %free%"
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = ${colors.foreground-alt}
+label-mounted = " %mountpoint%: %free%"
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
@@ -138,8 +139,9 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M
 
-format = " <label>"
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
+format = "<label>"
 format-underline = #0a6cf5
 
 label = %date% %time%
@@ -212,18 +214,15 @@ warn-temperature = 70
 
 format = <label>
 format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
+format-warn = <label-warn>
 format-warn-underline = ${self.format-underline}
-format-prefix = "temp:  "
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground-alt}
 
 [settings]
 screenchange-reload = true
-throttle-output = 5
-throttle-output-for = 10
+#throttle-output = 5
+#throttle-output-for = 10
 compositing-background = source
 compositing-foreground = over
 compositing-overline = over
